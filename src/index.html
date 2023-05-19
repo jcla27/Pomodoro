@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <link rel="stylesheet" href="style.css">
-    </head>    
-    <body>
-        <div class="todo-list">
+
+<head>
+  <title>pomodoro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="banner">
+    <div class="content">
+      <h1>Pomodoro</h1>
+    </div>
+  </section>
+
+  <img src="menu.png" id="menuicon">
+
+  <div class="menubox" id="menu">
+    <ul>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#todo-section">To-Do List</a></li>
+      <li><a href="#timer-section">Timer</a></li>
+    </ul>
+  </div>
+  
+<!--To-Do Section  -->
+  <div class="todo-container">
+  <div class="todo-list">
             <h2>To-Do List</h2>
             <div class="add-todo">
                 <input type="text" id="todo-input" placeholder="Add Your Task">
@@ -13,6 +36,7 @@
             <ul id="task-list">
                 <!-- <li>
                     <label>
+                        <button class="cancel-button">X</button>
                         <input type="checkbox" checked>
                         <p>Task 1</p>
                         <span></span>
@@ -27,13 +51,27 @@
                 </li>  -->
             </ul>
         </div>
-    
-    <body>
-        <div class="timer">
-            
-        </div>
-    </body>
+  </div>
 
-        <script src="script.js"></script>
-    </body>
+  <script src="script.js"></script>
+
+  <section id="timer-section">
+    <div class="container" center>
+      <div class="circle">
+        <div class="semicircle"></div>
+        <div class="semicircle"></div>
+        <div class="semicircle"></div>
+        <div class="outercircle"></div>
+      </div>
+
+      <div class="timer-container">
+        <div class="timer"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
