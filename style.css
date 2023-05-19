@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #6b705c;
+}
+
+.add-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d0d9b3;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+#add-btn{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #283618;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.todo-list {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    background: #ffe8d6;
+    margin: 100px auto 20px;
+    padding: 40px 30px 20px;
+    border-radius: 40px;
+}
+
+.todo-list h2 {
+    color: #283618;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.todo-list ul {
+    position: relative;
+    padding: 20px;
+}
+
+.todo-list ul li {
+    position: relative;
+    list-style: none;
+}
+
+.todo-list ul li:last-child {
+    border-bottom: none;
+}
+
+.todo-list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.todo-list ul li label input {
+    visibility: hidden;
+    appearance: none;
+}
+
+.todo-list ul li label p {
+    position: absolute;
+    color: #283618;
+    margin-left: 30px;
+}
+
+.cancel-button {
+    font-size: 20px;
+    color: #d0d9b3;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.todo-list ul li label span {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #d0d9b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list ul li label span::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #d0d9b3;
+    border-bottom: 2px solid #d0d9b3;
+    transform: rotate(-45deg);
+}
+
+.todo-list ul li label input:checked ~ p {
+    text-decoration: line-through;
+    color: #283618;
+}
+
+.todo-list ul li label input:checked ~ span {
+    background: #283618;
+    border: 2px solid #283618;
+}
+
+.todo-list ul li label input:checked ~ span::before {
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
