@@ -54,44 +54,39 @@ window.addEventListener('DOMContentLoaded', function() {
     var optionElements = document.getElementsByClassName('option');
     var bannerSection = document.getElementById('banner');
     var timerSection = document.getElementById('timer-section');
-    var todoSection = document.getElementById('todo-section'); 
+    var todoSection = document.getElementById('todo-section');
 
     // Define the mapping of background options to corresponding images
     var backgroundImages = {
-        /* 'backgroud/0.JPG': {
-            banner: 'red',
-            todo: 'green',
-            timer: 'blue'
-        }, */
-        /* 'background/1.JPG': {
-            banner: 'background/11.jpg',
-            todo: 'background/12.jpg',
-            timer: 'background/13.jpg'
-        }, */
-        'background/2.jpg': {
-            banner: 'background/21.jpg',
-            todo: 'background/22.jpg',
-            timer: 'background/23.jpg'
+        'backgrounds/1.JPG': {
+            banner: 'backgrounds/11.jpg',
+            todo: 'backgrounds/12.jpg',
+            timer: 'backgrounds/13.jpg'
         },
-        'background/3.JPG': {
-            banner: 'background/31.jpg',
-            todo: 'background/32.jpg',
-            timer: 'background/33.jpg'
+        'backgrounds/2.jpg': {
+            banner: 'backgrounds/21.jpg',
+            todo: 'backgrounds/22.jpg',
+            timer: 'backgrounds/23.jpg'
         },
-        'background/4.JPG': {
-            banner: 'background/41.jpg',
-            todo: 'background/42.jpg',
-            timer: 'background/43.jpg',
+        'backgrounds/3.JPG': {
+            banner: 'backgrounds/31.jpg',
+            todo: 'backgrounds/32.jpg',
+            timer: 'backgrounds/33.jpg'
         },
-        'background/5.JPG': {
-            banner: 'background/51.JPG',
-            todo: 'background/52.JPG',
-            timer: 'background/53.JPG'
+        'backgrounds/4.JPG': {
+            banner: 'backgrounds/41.jpg',
+            todo: 'backgrounds/42.jpg',
+            timer: 'backgrounds/43.jpg'
         },
-        'background/6.JPG': {
-            banner: 'background/61.JPG',
-            todo: 'background/62.JPG',
-            timer: 'background/63.JPG'
+        'backgrounds/5.jpg': {
+            banner: 'backgrounds/51.jpg',
+            todo: 'backgrounds/52.jpg',
+            timer: 'backgrounds/53.jpg'
+        },
+        'backgrounds/6.JPG': {
+            banner: 'backgrounds/61.jpg',
+            todo: 'backgrounds/62.jpg',
+            timer: 'backgrounds/63.jpg'
         },
     };
 
@@ -109,9 +104,9 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-  
-/* To-Do Section */
 
+
+//todo-list
 document.addEventListener('DOMContentLoaded', function() {
     // Get references to HTML elements
     var addButton = document.getElementById('add-btn');
@@ -247,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-/* Timer Section */
+//timer
 const semicircles = document.querySelectorAll('.semicircle');
 const timer = document.querySelector('.timer');
 const playButton = document.getElementById('play');
@@ -293,6 +288,8 @@ function resetTimer() {
     clearInterval(timerInterval);
     remainingTime = durations[modeSelect.value];
     updateTimerDisplay();
+    resetSemicirclesRotation();
+    resetColor();
 
     playButton.disabled = false;
     pauseButton.disabled = true;
@@ -304,6 +301,19 @@ function handleModeChange() {
         remainingTime = durations[modeSelect.value];
         updateTimerDisplay();
     }
+}
+
+function resetSemicirclesRotation() {
+    for (let i = 0; i < semicircles.length; i++) {
+        semicircles[i].style.display = 'block';
+        semicircles[i].style.transform = 'rotate(0deg)';
+    }
+}
+function resetColor() {
+    for (let i = 0; i < semicircles.length; i++) {
+        semicircles[i].style.backgroundColor = ''; // Reset background color
+    }
+    timer.style.color = ''; // Reset timer color
 }
 
 function updateTimer() {
