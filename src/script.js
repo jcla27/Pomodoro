@@ -58,35 +58,35 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Define the mapping of background options to corresponding images
     var backgroundImages = {
-        'backgrounds/1.JPG': {
-            banner: 'backgrounds/11.jpg',
-            todo: 'backgrounds/12.jpg',
-            timer: 'backgrounds/13.jpg'
+        'background/1.png': {
+            banner: 'background/1.png',
+            todo: 'background/12.png',
+            timer: 'background/1.png'
         },
-        'backgrounds/2.jpg': {
-            banner: 'backgrounds/21.jpg',
-            todo: 'backgrounds/22.jpg',
-            timer: 'backgrounds/23.jpg'
+        'background/2.JPG': {
+            banner: 'background/2.JPG',
+            todo: 'background/22.png',
+            timer: 'background/21.png'
         },
-        'backgrounds/3.JPG': {
-            banner: 'backgrounds/31.jpg',
-            todo: 'backgrounds/32.jpg',
-            timer: 'backgrounds/33.jpg'
+        'background/3.JPG': {
+            banner: 'background/3.JPG',
+            todo: 'background/31.png',
+            timer: 'background/32.png'
         },
-        'backgrounds/4.JPG': {
-            banner: 'backgrounds/41.jpg',
-            todo: 'backgrounds/42.jpg',
-            timer: 'backgrounds/43.jpg'
+        'background/4.JPG': {
+            banner: 'background/41.jpg',
+            todo: 'background/42.jpg',
+            timer: 'background/43.jpg'
         },
-        'backgrounds/5.jpg': {
-            banner: 'backgrounds/51.jpg',
-            todo: 'backgrounds/52.jpg',
-            timer: 'backgrounds/53.jpg'
+        'background/5.JPG': {
+            banner: 'background/51.JPG',
+            todo: 'background/52.JPG',
+            timer: 'background/53.JPG'
         },
-        'backgrounds/6.JPG': {
-            banner: 'backgrounds/61.jpg',
-            todo: 'backgrounds/62.jpg',
-            timer: 'backgrounds/63.jpg'
+        'background/6.JPG': {
+            banner: 'background/61.JPG',
+            todo: 'background/62.JPG',
+            timer: 'background/63.JPG'
         },
     };
 
