@@ -96,7 +96,7 @@
     justify-content: center; /* Center the items horizontally */
     flex-wrap: wrap;
 }
-  
+
 .option {
     width: 150px;
     /* height: 100px; */
@@ -142,7 +142,7 @@
     margin: 0 15px;
     text-decoration: none;
     color: #cccfd4;
-    font-size: 20px;
+    font-size: 1.5vw;
     letter-spacing: 2px;
     font-weight: 600;
 /*     -webkit-text-stroke: 1px red; */
@@ -152,160 +152,6 @@
 .navbar ul li a:hover{
     color: #7c7d80;
     transform: translateY(-6px);
-}
-
-#timer-section{
-    width: 100%;
-    height: 100vh;
-    background-color: #f8f7f2;
-    background-size: cover;
-    background-position: center;
-}
-.controls {
-    text-align: center;
-    position: relative;
-    bottom: 130px;
-}
-
-.mode-select {
-    text-align: center;
-    position: relative;
-    top: 70px;
-}
-.container{
-    width: 100%;
-    height: 90vh;
-    padding-inline: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: relative;
-    top: -50px;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 400px;
-    background-color: #ddd;
-    border-radius: 50%;
-    z-index: 1;
-    position: absolute;
-    -webkit-box-shadow: 0px 0px 15px 10px #fff;
-    box-shadow: 0px 0px 15px 10px #fff;
-    overflow: hidden;
-    /* bottom: 120px; */
-}
-
-.semicircle{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: right center;
-}
-
-.semicircle:nth-child(1){
-    background-color: #2d2926;
-    z-index: 2;
-}
-
-.semicircle:nth-child(2){
-    background-color: #2d2926;
-    z-index: 2;
-    z-index: 3;
-}
-
-.semicircle:nth-child(3){
-    background-color: #ddd;
-    z-index: 4;
-    display: none ;
-}
-
-.outercircle{
-    width: 390px;
-    height: 390px;
-    background-color: #f8f7f2;
-    border-radius: 50%;
-    z-index: 5;
-}
-
-.timer-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 200px;
-    z-index: 6;
-}
-
-.timer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 100px;
-    z-index: 7;
-    color: #2d2926;
-}
-
-.timer div {
-    font-size: 70px;
-    font-weight: 100;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px 0 10px;
-}
-
-.timer .colon {
-    background-color: transparent;
-    width: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 15px;
-}
-
-.mode-select{
-    color: #2d2926;
-    z-index: 100;
-}
-
-.mode-select label {
-    font-size: 20px;
-}
-
-.mode-select select {
-    font-size: 20px;
-    background-color: transparent;
-    border-color: transparent;
-    color: #2d2926;
-    margin: 20px;
-}
-
-.controls button {
-    background-color: transparent;
-    font-size: 25px;
-    color: #2d2926;
-    transition: color 0.5s, transform 0.5s;
-    border: none;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.controls button:hover {
-    color: #888789;
 }
 
 #todo-section{
@@ -449,4 +295,158 @@ input {
 .todo-list ul li label input:checked ~ span::before {
     border-left: 2px solid whitesmoke;
     border-bottom: 2px solid whitesmoke;
+}
+
+#timer-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f7f2;
+    background-size: cover;
+    background-position: center;
+}
+.controls {
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+}
+
+.mode-select {
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    top: -50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 30px 5px #ffffff;
+    box-shadow: 0px 0px 30px 5px #fff;
+    overflow: hidden;
+    /* bottom: 120px; */
+}
+
+.semicircle{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+}
+
+.semicircle:nth-child(1){
+    background-color: #2d2926;
+    z-index: 2;
+}
+
+.semicircle:nth-child(2){
+    background-color: #2d2926;
+    z-index: 2;
+    z-index: 3;
+}
+
+.semicircle:nth-child(3){
+    background-color: #ddd;
+    z-index: 4;
+    display: none ;
+}
+
+.outercircle{
+    width: 390px;
+    height: 390px;
+    background-color: #f8f7f2;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 200px;
+    z-index: 6;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    z-index: 7;
+    color: #2d2926;
+}
+
+.timer div {
+    font-size: 70px;
+    font-weight: 100;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.timer .colon {
+    background-color: transparent;
+    width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+.mode-select{
+    color: #2d2926;
+    z-index: 100;
+}
+
+.mode-select label {
+    font-size: 20px;
+}
+
+.mode-select select {
+    font-size: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #2d2926;
+    margin: 20px;
+}
+
+.controls button {
+    background-color: transparent;
+    font-size: 25px;
+    color: #2d2926;
+    transition: color 0.5s, transform 0.5s;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #888789;
 }
