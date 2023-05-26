@@ -3,6 +3,7 @@
 <head>
     <title>Pomodoro</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
 </head>
 <body>
 <header>
@@ -14,12 +15,7 @@
             <li><a href="#banner">Home</a></li>
             <li><a href="#todo-section">To-Do List</a></li>
             <li><a href="#timer-section">Timer</a></li>
-            <form action="login.php" method="post">
-                <input type="submit" value="login">
-            </form>
-            <form action="logout.php" method="post">
-                <input type="submit" value="logout">
-            </form>
+            <li><a href="#login-section">Login</a></li>
         </ul>
     </div>
 
@@ -28,11 +24,10 @@
             <label for="backgroundSelect">Select a background image:</label>
         </div>
             <div id="imageOptions">
-                <img src="background/0.JPG" alt="Background 1" class="option">
-                <!-- <img src="background/1.JPG" alt="Alpine Blues" class="option"> -->
+                <img src="background/1.png" alt="Background 1" class="option">
                 <img src="background/2.JPG" alt="Background 2" class="option">
                 <img src="background/3.JPG" alt="Background 3" class="option">
-                <img src="background/4.JPG" alt="Background 4" class="option">
+                <img value="BG1" src="background/4.JPG" alt="Background 4" class="option">
                 <img src="background/5.JPG" alt="Background 5" class="option">
                 <img src="background/6.JPG" alt="Background 6" class="option">
             </div>
@@ -98,8 +93,6 @@
 </section>
 
 <script src="script.js"></script>
-
-
 
 </body>
 </html>
