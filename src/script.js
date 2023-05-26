@@ -43,7 +43,7 @@ let menuicon = document.getElementById("menuicon");
 menuicon.onclick = function(){
     settings.classList.toggle("open");
     if(settings.classList.contains("open")){
-        menuicon.src = "close.png";
+        menuicon.src = "close.PNG";
     }else{
         menuicon.src = "menu.png";
     }
