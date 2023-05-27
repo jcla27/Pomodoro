@@ -252,7 +252,7 @@ const modeSelect = document.getElementById('mode');
 
 const durations = {
   pomodoro: 25 * 60, // 25 minutes
-  shortBreak: 1 * 10, // 5 minutes
+  shortBreak: 5 * 60, // 5 minutes
   longBreak: 15 * 60 // 15 minutes
 };
 
