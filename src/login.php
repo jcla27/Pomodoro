@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-   header("Location: home.html");
+   header("Location: index.php");
    exit();
 }
 ?>
@@ -17,6 +17,7 @@ if (isset($_SESSION["user"])) {
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <h1>Log in</h1>
     <div class="container">
         <?php
         if (isset($_POST["login"])) {
@@ -29,7 +30,7 @@ if (isset($_SESSION["user"])) {
             if ($user) {
                 if (password_verify($password, $user["password"])) {
                     $_SESSION["user"] = "yes";
-                    header("Location: home.html");
+                    header("Location: index.php");
                     exit();
                 } else {
                     echo "<div class='alert alert-danger'>Password does not match</div>";
@@ -41,17 +42,18 @@ if (isset($_SESSION["user"])) {
         ?>
         <form action="login.php" method="post">
             <div class="form-group">
-                <input type="email" placeholder="Enter Email:" name="email" class="form-control">
+                <input type="email" placeholder="Email" name="email" class="form-control">
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Enter Password:" name="password" class="form-control">
+                <input type="password" placeholder="Password" name="password" class="form-control">
             </div>
             <div class="form-btn">
                 <input type="submit" value="Login" name="login" class="btn btn-primary">
             </div>
         </form>
+        <!-- <img src="home.png"> -->
         <div>
-            <p>Not registered yet <a href="registration.php">Register Here</a></p>
+            <p>Not registered yet? <a href="registration.php">Register Here</a></p>
         </div>
     </div>
 </body>
