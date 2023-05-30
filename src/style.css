@@ -15,6 +15,7 @@
     box-sizing: border-box;
 }
 
+
 #banner{
     width: 100%;
     height: 100vh;
@@ -36,6 +37,20 @@
     font-weight: 100;
     margin-top: 50px;
     color: #2d2926;
+}
+
+.content p2 {
+    font-size: 20px;
+    font-family: 'Merchant';
+    position: absolute;
+    color: #7c7d80;
+    transition: color 0.5s;
+    margin-top: 300px;
+    right: 45%;
+}
+
+.content p2:hover {
+    color: #cccfd4;
 }
 
 #menuicon{
@@ -236,7 +251,6 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 }
 
 .todo-list ul li label input {
