@@ -31,7 +31,7 @@
    - Name the database as 'login_register'.
    - Create a table named 'users' with four columns: id, full name, email, and password.
    - Set the column types as follows: id (integer), full name (varchar), email (varchar), and password (varchar).
-   - Enable the 'Auto Increment' option for the id column.
+   - Enable the 'A I' option for the id column.
    - Set the length values as follows: id (blank), full name (128), email (255), and password (255).
    - Save the changes to complete the database setup.
 
