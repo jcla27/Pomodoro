@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-   header("Location: index.php");
+   header("Location: home.html");
    exit();
 }
 ?>
@@ -30,7 +30,7 @@ if (isset($_SESSION["user"])) {
             if ($user) {
                 if (password_verify($password, $user["password"])) {
                     $_SESSION["user"] = "yes";
-                    header("Location: index.php");
+                    header("Location: home.html");
                     exit();
                 } else {
                     echo "<div class='alert alert-danger'>Password does not match</div>";
