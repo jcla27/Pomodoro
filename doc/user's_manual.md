@@ -1,10 +1,12 @@
-1. Introduction:
+**1. Introduction:**
+
 The website will be a multi-user incorporating the pomodoro technique which is a time management method based on a 25 minute 
 stretch of full concentration working with 5 minute intervals of breaks, and also 15 minutes break for every 4 loops of the pomodoro timer. 
 It aims to provide a simple and intuitive user interface that allows users to start, pause, and reset the timer according to 
 the predefined intervals.
 
-2. Functionality:
+**2. Functionality:**
+
 - Registration: Users can create a new account by providing their full name, email address, and password.
 - Login: Registered users can log in using their email address and password.
 - Authentication: The system verifies the user's credentials and grants access to protected areas if the login is successful.
@@ -13,7 +15,7 @@ the predefined intervals.
 - Timer: Users can set a countdown timer for a specified duration.
 - Background Change: Users can change the background color of the web page.
 
-3.Scenarios:
+**3.Scenarios:**
 
 a. Registration and Login:
 - To create a new account, navigate to the registration page.
