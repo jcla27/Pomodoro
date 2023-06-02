@@ -1,4 +1,4 @@
-1. Download the zip file with the file name 'Archive.zip'
+1. Download the zip file with the file name 'src.zip'
 
 2. Install XAMPP:
    - Visit the official XAMPP website at https://www.apachefriends.org/download.html.
