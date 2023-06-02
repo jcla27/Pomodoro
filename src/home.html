@@ -46,25 +46,15 @@
 </div>
 </section>
 
-<!-- <section id="todo-section">
-    <div class="cont">
-    <div class="todo-list">
-        <h2>To-Do List</h2>
-        <div class="add-todo">
-            <input type="text" id="todo-input" placeholder="Add Your Task">
-            <button id="add-btn">Add</button>
-          </div>
-        <ul id="task-list"></ul>
-    </div>
-    </div>
-</section> -->
-
 <section id="todo-section">
     <div class="todo-list">
         <h2>To-Do List</h2>
         <div class="add-todo">
-            <input type="text" id="todo-input" placeholder="Add Your Task">
+            <form action="task.php" method="post">
+            <input type="text" id="todo-input" name="taskName" placeholder="Add Your Task">
             <button id="add-btn">Add</button>
+            <!-- <input type="submit" id="add-btn" class="btn btn-primary" value="Add" name="add"> -->
+            </form>
           </div>
         <ul id="task-list"></ul>
     </div>
