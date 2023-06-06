@@ -28,11 +28,8 @@
    - Open your web browser and enter 'localhost/phpmyadmin/' in the address bar.
    - On the left-hand side of the page, select 'New' to create a new database.
    - Name the database as 'login_register'.
-   - Create a table named 'users' with four columns: id, full_name, email, and password.
-   - Set the column types as follows: id (integer), full name (varchar), email (varchar), and password (varchar).
-   - Enable the 'A I' option for the id column.
-   - Set the Length/Values as follows: id (blank), full name (128), email (255), and password (255).
-   - Save the changes to complete the database setup.
+   - Download he file 'database.sql' and put it inside src folder
+   - In the phpmyadmin inside the 'login_register' databse, import the 'database.sql' file
 
 6. Access the Pomodoro website:
    - Open your web browser and enter 'localhost/src/home.html' in the address bar.
