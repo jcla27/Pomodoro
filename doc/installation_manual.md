@@ -27,12 +27,11 @@
 5. Set up the database:
    - Open your web browser and enter 'localhost/phpmyadmin/' in the address bar.
    - On the left-hand side of the page, select 'New' to create a new database.
-   - Name the database as 'login_register'.
-   - Download he file 'database.sql' and put it inside src folder
-   - In the phpmyadmin inside the 'login_register' databse, import the 'database.sql' file
+   - Name the database as 'todo_list'.
+   - Import file 'todo_list-5.sql' inside the databse
 
 6. Access the Pomodoro website:
-   - Open your web browser and enter 'localhost/src/home.html' in the address bar.
+   - Open your web browser and enter 'localhost/src/home.php' in the address bar.
    - Press Enter to access the Pomodoro website.
 
 Note:
