@@ -3,6 +3,7 @@ require 'db_conn.php';
 /* require 'database.php'; */
 ?>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,12 +23,22 @@ require 'db_conn.php';
             <li><a href="#banner">Home</a></li>
             <li><a href="#todo-section">To-Do List</a></li>
             <li><a href="#timer-section">Timer</a></li>
-            <form action="login.php" method="post" style="text-decoration: none;">
-                <input type="submit" value="login">
-            </form>
-            <form action="logout.php" method="post">
-                <input type="submit" value="logout">
-            </form>    
+            <?php
+session_start();
+if (isset($_SESSION["user"])) {
+    // User is logged in
+    echo '
+    <form action="logout.php" method="post">
+        <input type="submit" value="Logout">
+    </form>';
+} else {
+    // User is logged out
+    echo '
+    <form action="login.php" method="post">
+        <input type="submit" value="Login">
+    </form>';
+}
+?>  
         </ul>
     </div>
 
