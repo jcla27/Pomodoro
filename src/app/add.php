@@ -1,29 +1,28 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: ../login.php");
+    exit();
+}
+
+require_once "../database.php";
 
 if (isset($_POST['title'])) {
-    require '../database.php';
-
     $title = $_POST['title'];
+    $user_id = $_SESSION['id'];
 
     if (empty($title)) {
-        header("Location: ../home.php?mess=error");
-    } else {
-        $stmt = $conn->prepare("INSERT INTO todos(user_id, title) VALUES(?, ?)");
-        $UserID = $_SESSION['id'];
-        $res = $stmt->execute([$UserID, $title]);
-
-        if ($res) {
-            header("Location: ../home.php?mess=success");
-        } else {
-            header("Location: ../home.php");
-        }
-        $conn = null;
+        header("Location: ../home.php?mess=error#todo-section"); // Redirect to todo section
         exit();
     }
+
+    $stmt = $conn->prepare("INSERT INTO todos (user_id, title) VALUES (?, ?)");
+    $stmt->execute([$user_id, $title]);
+
+    header("Location: ../home.php?mess=success#todo-section"); // Redirect to todo section
+    exit();
 } else {
     header("Location: ../home.php?mess=error");
+    exit();
 }
 ?>
