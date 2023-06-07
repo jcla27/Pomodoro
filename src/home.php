@@ -67,16 +67,20 @@ require 'db_conn.php';
             <?php }else{ ?>
                 <input type="text" 
                      name="title" 
-                     placeholder="What do you need to do?" />
+                     placeholder="Enter your task here?" />
                 <button type="submit">Add &nbsp; <span>&#43;</span></button>
             <?php } ?>
             </form>
         </div>
         <?php 
-        $todos = $conn->query("SELECT * FROM todos ORDER BY task_id DESC");
+        session_start();
+        $UserID = $_SESSION['id'];
+        $sql = "SELECT * FROM todos WHERE user_id = $UserID";
+        $todos = $conn->query("SELECT * FROM todos WHERE user_id = $UserID ORDER BY task_id DESC");
         ?>
         <div class="show-todo-section">
-            <?php while($todo = $todos->fetch(PDO::FETCH_ASSOC)) { ?>
+            <?php
+            while($todo = $todos->fetch(PDO::FETCH_ASSOC)) { ?>
                 <div class="todo-item">
                     <span id="<?php echo $todo['task_id']; ?>"
                           class="remove-to-do">x</span>
