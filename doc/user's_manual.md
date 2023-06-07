@@ -5,6 +5,9 @@ stretch of full concentration working with 5 minute intervals of breaks, and als
 It aims to provide a simple and intuitive user interface that allows users to start, pause, and reset the timer according to 
 the predefined intervals.
 
+Note:
+You can use the website only when you register an account and log in. Creating an account will allow you to save your to-do lists and use other features for future reference.
+
 **2. Functionality:**
 
 - Registration: Users can create a new account by providing their full name, email address, and password.
