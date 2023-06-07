@@ -9,8 +9,7 @@ the predefined intervals.
 
 - Registration: Users can create a new account by providing their full name, email address, and password.
 - Login: Registered users can log in using their email address and password.
-- Authentication: The system verifies the user's credentials and grants access to protected areas if the login is successful.
-- Session Management: The system uses session management to keep the user logged in across multiple pages.
+- Authentication: The system verifies the user's credentials and grants access toareas if the login is successful.
 - To-Do List: Users can add, remove, and manage tasks in a to-do list.
 - Timer: Users can set a countdown timer for a specified duration.
 - Background Change: Users can change the background color of the web page.
