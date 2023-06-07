@@ -60,9 +60,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `full_name`, `password`, `email`) VALUES
-(8, 'lala', '$2y$10$mqReRdkqVyCEnw/PwCvDveFhNNtZta66zXhUTL7vFRwAfhrLAzaT.', 'jo@gmail.com'),
-(9, 'sdkj', '$2y$10$IEupTnJM2HRjA11WlOhM8ePZEJJ/.LqEXPCWUMg19qD54KLdmcXq.', 'la@gmail.com');
 
 --
 -- Indexes for dumped tables
