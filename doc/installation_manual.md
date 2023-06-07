@@ -35,4 +35,4 @@
    - Press Enter to access the Pomodoro website.
 
 Note:
-You can use the website without registering or logging in. However, creating an account will allow you to save your to-do lists for future reference.
+You can use the website only when you register an account and log in. However, creating an account will allow you to save your to-do lists and use other features for future reference.
