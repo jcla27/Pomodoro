@@ -11,7 +11,6 @@ to the predefined intervals. The timer is a pure front-end. In various research 
 - Timer: webpage display a countdown timer that starts at the beginning of each Pomodoro interval (typically 25 minutes) and counts down to zero. Users should be able to start, pause, and reset the timer.
 - To-Do List: the webpage provides a to-do list where users can create, edit, and organize their tasks. Users should be able to add new tasks, mark tasks as completed, and delete tasks.
 The to-do list will be related to the database so each account can have different lists.
-If no login, the list will not be saved to the database but can still be there after a refresh.
 - Data Persistence: User data, including tasks, should be saved on a server. This ensures that users can access their data from any device after logging in.
 
 **Architecture:**
