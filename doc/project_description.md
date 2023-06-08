@@ -17,8 +17,8 @@ The to-do list will be related to the database so each account can have differen
 1. Front-End
 - User Interface (UI): HTML and CSS are used to create an intuitive and visually appealing UI. The UI displays the timer, interval progress, and customizable settings. CSS is used for styling and layout.
 - Timer Control and Logic: JavaScript is used to handle the timer functionality. It starts, pauses, and resets the timer based on user input. It also manages the interval tracking, triggering breaks, and updating the UI accordingly.
-- Customization: JavaScript allows users to customize the background themes. These settings can be stored locally using browser storage mechanisms like localStorage or can be saved on a server if user accounts are implemented.
-- Task Management: JavaScript handles the functionality of the to-do list, allowing users to add, edit, and delete tasks. Tasks can be stored in an array or an object-based data structure.
+- Customization: JavaScript allows users to customize the background themes.
+- Task Management: JavaScript handles the functionality of the to-do list, allowing users to add, edit, and delete tasks. Tasks can be stored in an account.
 
 2. Back-End
 - Server: A server-side application handles user authentication, task and timer data storage, and synchronization. It receives and processes API requests from the client, interacting with a database or storage system.
