@@ -6,7 +6,7 @@ to the predefined intervals. The timer is a pure front-end. In various research 
 
 **Functionality:**
 - Homepage: includes the navigation bar to login, settings, timer and to-do list sections.
-- User Authentication: webpage should allow users to create an account, log in, and log out. User authentication ensures that each user can access their own to-do list data securely.
+- User Authentication: webpage should allow users to create an account, log in, and log out. User authentication ensures that each user can access their own to-do list data.
 - Settings section includes the options to change the background theme.
 - Timer: webpage display a countdown timer that starts at the beginning of each Pomodoro interval (typically 25 minutes) and counts down to zero. Users should be able to start, pause, and reset the timer.
 - To-Do List: the webpage provides a to-do list where users can create, edit, and organize their tasks. Users should be able to add new tasks, mark tasks as completed, and delete tasks.
