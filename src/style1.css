@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Merchant';
+    src: url(../src/Merchant/Merchant-Black.otf);
+}
+
+@font-face {
+    font-family: 'Merchant-Light';
+    src: url(../src/Merchant/Merchant-Light.otf);
+}
+
+* {
+    word-spacing: 1px;
+}
+
+h1 {
+    color: #2d2926;
+    text-align: center;
+    margin-top: 50px;
+}
+
+body{
+    padding:100px;
+    background: #f8f7f2;
+    font-family: 'Merchant';
+}
+.container{
+    max-width: 500px;
+    margin:0 auto;
+    padding: 50px;
+    border-radius: 30px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.alert.alert-danger{
+    background: rgb(210, 78, 78);
+    color: #f8f7f2;
+    border-color: transparent;
+}
+
+.form-group{
+    margin-bottom: 30px;
+    font-family: 'Merchant-Light';
+    color: #7c7d80;
+}
+
+.form-control {
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: #cccfd4;
+    height: 45px;
+    max-width: 500px;
+}
+
+.form-btn {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.form-btn input{
+    color: #f8f7f2;
+    background-color: #2d2926;
+    border-color: transparent;
+    border-radius: 30px;
+    max-width: 500px;
+    border-radius: 30px;
+    width: 400px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.form-btn input:hover {
+    background-color: #2d2926;
+    color: #f8f7f2;
+    border-color: transparent;
+}
+
+
+p {
+    margin-top: 80px;
+    color: #2d2926;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* img {
+    position: absolute;
+    size: 20px;
+    align-items: center;
+} */
+
+a {
+    color: #2d2926;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #7c7d80;
+}

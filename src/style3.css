@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'Merchant';
+    src: url(Merchant/Merchant-Black.otf);
+}
+
+@font-face {
+    font-family: 'Merchant-Light';
+    src: url(Merchant/Merchant-Light.otf);
+}
+
+*{
+    font-family: 'Merchant';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f7f2;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.content h1{
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 50px;
+    color: #2d2926;
+}
+
+.content p2 {
+    font-size: 20px;
+    font-family: 'Merchant';
+    position: absolute;
+    color: #7c7d80;
+    transition: color 0.5s;
+    margin-top: 300px;
+    right: 45%;
+}
+
+.content p2:hover {
+    color: #cccfd4;
+}
+
+#menuicon{
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.5s;
+}
+
+#menuicon:hover{
+    transform: translateY(-6px);
+}
+
+.settingbox{
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.80);
+    position: fixed;
+    top: 25%;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 100%;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+}
+
+.settingbox.open{
+     width: 50%;
+     height: 50vh;
+     padding: 10%;
+     border-bottom-left-radius: 0;
+     z-index: 10;
+     border-radius: 30px;
+     color: #fff;
+}
+
+.label-container {
+    text-align: center; /* Center the label */
+    margin-bottom: 10px; /* Add some spacing below the label */
+}
+
+.label-container label {
+    font-size: 20px; /* Increase the font size to your desired value */
+    color: #fff; /* Set the text color */
+    font-family: 'Merchant';
+}
+
+#imageOptions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 150px;
+    /* height: 100px; */
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+.option:hover{
+    color: #000;
+    transform: translateY(-6px);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.navbar ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    position: relative;
+    list-style: none;
+}
+
+.navbar ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #cccfd4;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    font-weight: 600;
+/*     -webkit-text-stroke: 1px red; */
+    transition: color 0.5s, transform 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: #7c7d80;
+    transform: translateY(-6px);
+}
+
+.navbar ul  .login-btn {
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+/*   .logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } */
+
+/*To-Do Section*/
+#todo-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2d2926;
+    background-size: cover;
+    background-position: center;
+} 
+
+.main-section{
+    background: transparent;
+    max-width: 500px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    border: 10px;
+}
+
+.add-section{
+    width: 100%;
+    background: #fff;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-section input{
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.add-section button{
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 0px auto;
+    border: none;
+    outline: none;
+    background: #2d2926;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-section button:hover{
+    box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc;
+    opacity: 0.7;
+}
+
+.add-section button span{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+#errorMes{
+    display: block;
+    background: #f2dede;
+    width: 95%;
+    margin:  0px auto;
+    color: rgb(139, 19, 19);
+    padding: 10px;
+    height: 35px;
+}
+
+.show-todo-section{
+    width: 100%;
+    background: #fff;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todo-item{
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+    border-radius: 5px;
+}
+
+.todo-item h2{
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+    color: #555;
+}
+
+.todo-item small{
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    color: #888;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.remove-to-do{
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    font-family: sans-serif;
+    color: rgb(139, 97, 93);
+    text-decoration: none;
+    text-align: right;
+    padding: 0px 5px 8px 0px;
+    border-radius: 50%;
+    transition: background 1s;
+    cursor: pointer;
+}
+
+.remove-to-do:hover{
+    background: rgb(139, 97, 93);
+    color: #fff;
+}
+
+.checked{
+    color: #999 !important;
+    text-decoration: line-through;
+}
+
+.todo-item input{
+    margin: 0px 5px;
+}
+
+.empty{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #cccc;
+}
+
+/*Timer Section*/
+#timer-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f7f2;
+    background-size: cover;
+    background-position: center;
+}
+.controls {
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+}
+
+.mode-select {
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    top: -50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 30px 5px #ffffff;
+    box-shadow: 0px 0px 30px 5px #fff;
+    overflow: hidden;
+    /* bottom: 120px; */
+}
+
+.semicircle{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+}
+
+.semicircle:nth-child(1){
+    background-color: #2d2926;
+    z-index: 2;
+}
+
+.semicircle:nth-child(2){
+    background-color: #2d2926;
+    z-index: 2;
+    z-index: 3;
+}
+
+.semicircle:nth-child(3){
+    background-color: #ddd;
+    z-index: 4;
+    display: none ;
+}
+
+.outercircle{
+    width: 390px;
+    height: 390px;
+    background-color: #f8f7f2;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 200px;
+    z-index: 6;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    z-index: 7;
+    color: #2d2926;
+}
+
+.timer div {
+    font-size: 70px;
+    font-weight: 100;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.timer .colon {
+    background-color: transparent;
+    width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+.mode-select{
+    color: #2d2926;
+    z-index: 100;
+}
+
+.mode-select label {
+    font-size: 20px;
+}
+
+.mode-select select {
+    font-size: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #2d2926;
+    margin: 20px;
+}
+
+.controls button {
+    background-color: transparent;
+    font-size: 25px;
+    color: #2d2926;
+    transition: color 0.5s, transform 0.5s;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #888789;
+}
